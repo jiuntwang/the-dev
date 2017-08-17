@@ -94,7 +94,7 @@ body {
 
 #story-text {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 button#undo {
     border: none;
@@ -114,11 +114,11 @@ button#undo:hover {
 }
 #choices li {
     white-space: normal;
-    padding: 0.5rem;
+    padding: 10px;
     background: #e8e8e8;
-    font-size: 0.9rem;
+    font-size: 14px;
     cursor: pointer;
-    margin: 1rem 0;
+    margin: 5px 0;
 }
 #choices li:hover {
     background: #333;

@@ -60,7 +60,9 @@ function changePage(slug){
 var storyData = {
     title: "The Dev",
     p1 : {
-        text: `You are a young and up and coming Web Developer named ${playerName}. Standing on a large seal on the ground, you look at your surroundings.`,
+        text: `You are a young and up and coming Web Developer named ${playerName}.
+        <br>
+        Standing on a large seal on the ground, you look at your surroundings...`,
         choices: [
             {
                 text: `You see a steep uphill path straight ahead.`,
