@@ -10,20 +10,17 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
+
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
-     <script src="/bower_components/modernizr/modernizr.js"></script> 
-    <!-- endbuild -->
-    <!-- build:js(.tmp) scripts/main.js -->
-    <script src="scripts/main.js" defer></script>
-    <!-- endbuild -->
-    
+
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script src="scripts/main.js" defer></script> 
+         <script src="scripts/playerStorage.js"></script> 
+
+
+
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -48,19 +45,29 @@
       </div>
     </div>
 
-      <div class="container"> 
+      <div class="container" id="story-content"> 
         <h1 id="story-title">Title of Story</h1>
         <p id="story-text">Lorem ipsum text chunk.</p>
         <hr>
         <h2>What will you do?</h2>
             <ul id="choices">
-              <li id="choice1" data-slug>First Choice.</li>
-              <li id="choice2"> Second Choice.</li>
-              <li id="choice3"> Third Choice.</li>
-              <li id="choice4"> Fourth Choice.</li>
+              <li id="choice1" onclick="storageValue();" data-slug>First Choice.</li>
+              <li id="choice2" onclick="storageValue();"> Second Choice.</li>
+              <li id="choice3" onclick="storageValue();"> Third Choice.</li>
+              <li id="choice4" onclick="storageValue();"> Fourth Choice.</li>
             </ul>
         <p class="undo-link"><button id="undo">Undo last choice.</button></p>   
        </div>
+
+       <!-- <div class="container">
+        <h3>Save Your Game</h2>
+        <div id="data"></div>
+        <hr/>
+        <span>Key</span><input type="text" id="key"/><span>Value</span><input type="text" id="value"/>
+
+        <input type="button" id="save" value="Save"/>
+        </div> -->
+
 
       <div class="footer">
         <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
@@ -99,6 +106,7 @@
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+</script>
+
   </body>
 </html>
