@@ -56,5 +56,8 @@
         2
       ]
     }
+  },
+  "dependencies": {
+    "requirejs": "^2.3.4"
   }
 }
