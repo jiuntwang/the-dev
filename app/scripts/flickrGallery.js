@@ -1,7 +1,7 @@
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=f47d127855c4746ff326f9fed6fc31ce&gallery_id=148106091-72157685425480983&format=json&nojsoncallback=1",
+  "url": "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=2ed53d6b112734628c8b52a85cdae79c&gallery_id=148106091-72157685425480983&format=json&nojsoncallback=1",
   "method": "GET",
   "headers": {}
 }
