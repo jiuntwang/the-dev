@@ -209,7 +209,38 @@ var storyData = {
                 link: 'p3'
             }
         ]
-    }
+    },
+    info : {
+        text: `You place your hand on the handle of the gate, and shake it violently.
+        <br><br>
+        The gate won't open. You sigh heavily.`,
+        choices : [
+            {
+                text: `You bang on the gate once more, and turn around.`,
+                link: 'p4'
+            }, {
+                text: `Check your pockets for an explosive.`,
+                link: 'pockets'
+            }
+        ]
+    },
+    library : {
+        text: `You enter the hidden entry, and find yourself surround by hundreds of scrolls and books lining the inner walls.
+        <br><br>
+        On the table ahead of you, there are two books - a red book, and a blue book.`,
+        choices : [
+            {
+                text: `Pick the red book, and open it.`,
+                link: 'red'
+            }, {
+                text: `Pick the blue book, and open it.`,
+                link: 'blue'
+            }, {
+                text: `You feel uncomfortable, so you close your eyes and pretend that nothing ever happened.`,
+                link: 'p1'
+            }
+        ]
+    },
 };
 
 ///////////////////////////////////////////////////
